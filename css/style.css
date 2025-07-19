@@ -31,7 +31,8 @@ h6 {
 }
 
 /* body */
-body {
+header,
+main {
   max-width: 1110px;
   margin: 0 auto;
   font-family: var(--primary-font);
@@ -229,9 +230,46 @@ main > section {
   border-radius: 0;
 }
 
+/* footer */
+.footer {
+  max-width: 100%;
+  background-color: #0a0826;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-content > h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+}
+
+.footer-content > p {
+  font-family: var(--fourth-font);
+  font-size: 0.87rem;
+  font-weight: bold;
+}
+
+.social-item {
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+}
+
+.social-item li a {
+  color: white;
+}
+
+.social-item li a:hover {
+  color: var(--primary-color);
+}
+
 /* Extra Small screen (Mobile) */
 @media screen and (max-width: 576px) {
-  body {
+  header,
+  main {
     max-width: 100%;
     padding: 0 20px;
   }
@@ -317,7 +355,8 @@ main > section {
 
 /* small device */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  body {
+  header,
+  main {
     max-width: 100%;
     padding: 0 20px;
   }
@@ -391,7 +430,8 @@ main > section {
 
 /* medium screen */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body {
+  header,
+  main {
     max-width: 100%;
     padding: 0 20px;
   }
@@ -452,7 +492,8 @@ main > section {
 
 /* large screen */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  body {
+  header,
+  main {
     max-width: 100%;
     padding: 0 20px;
   }
