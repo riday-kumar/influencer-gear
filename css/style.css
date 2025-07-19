@@ -43,6 +43,10 @@ body {
   display: flex;
 }
 
+.main > section {
+  margin-top: 100px;
+}
+
 .btn-primary {
   padding: 10px 24px;
   background: var(--primary-color);
@@ -52,6 +56,7 @@ body {
   color: white;
 }
 
+/* common css */
 /* navbar */
 .nav-bar {
   justify-content: space-between;
@@ -105,6 +110,19 @@ body {
   height: 475px;
 }
 
+/* Company Logo */
+.company {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+}
+
+.company > img {
+  height: 39px;
+  width: 99px;
+}
+
 /* Extra Small screen (Mobile) */
 @media screen and (max-width: 576px) {
   body {
@@ -150,6 +168,18 @@ body {
 
   .banner-img img {
     height: 190px;
+  }
+
+  .company {
+    flex-wrap: wrap;
+    height: 0;
+    gap: 15px;
+  }
+
+  .company > img {
+    /* height: 18px;
+    width: 33px; */
+    padding: 10px 20px;
   }
 }
 
