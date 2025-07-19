@@ -105,7 +105,7 @@ main > section {
 }
 
 .banner-img {
-  background-image: url("/images/Circle.svg");
+  background: url("/images/circle.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 475px;
