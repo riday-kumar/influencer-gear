@@ -2,18 +2,10 @@
 
 * {
   box-sizing: border-box;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
   padding: 0;
   margin: 0;
 }
+
 
 :root {
   --primary-color: #e02c6d;
@@ -105,7 +97,7 @@ main > section {
 }
 
 .banner-img {
-  background-image: url("/images/circle.png");
+  background-image: url("./images/circle.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 475px;
