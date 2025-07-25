@@ -19,7 +19,7 @@
       <!-- navbar -->
       <nav class="nav-bar display-flex">
         <h3 class="logo">Influencer products</h3>
-        <ul class="nav-items display-flex">
+        <ul class="nav-items display-flex" id="menuList">
           <li><a href="">Home</a></li>
           <li><a href="">Products</a></li>
           <li><a href="">Sign Up</a></li>
@@ -31,6 +31,10 @@
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
           </li>
         </ul>
+        <!-- menu icon -->
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
       </nav>
       <!-- banner -->
       <div class="banner display-flex">
@@ -283,5 +287,18 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      let menutoggle = document.getElementById("menuList");
+      menutoggle.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menutoggle.style.maxHeight == "0px") {
+          menutoggle.style.maxHeight = "400px";
+        } else {
+          menutoggle.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>
