@@ -262,6 +262,10 @@ main > section {
   color: var(--primary-color);
 }
 
+.footer-content p:nth-child(3) {
+  margin: 20px 0;
+}
+
 /* Extra Small screen (Mobile) */
 @media screen and (max-width: 576px) {
   header,
