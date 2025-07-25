@@ -116,11 +116,13 @@ main > section {
   border-top: 1px solid rgb(192 204 218 / 21%);
   border-bottom: 1px solid rgb(192 204 218 / 21%);
   border-radius: none;
+  /* animation: left-to-right 3s ease 4s; */
 }
 
 .company > img {
   height: 39px;
   width: 99px;
+  animation: left-to-right 4s ease forwards;
 }
 
 /* popular collection */
@@ -267,12 +269,12 @@ main > section {
   margin: 20px 0;
 }
 
-/* animation added */
+/* animation added for button */
 .btn-primary:hover {
   transform: scale(1.2) rotate(5deg);
   transition: transform 0.4s ease;
 }
-
+/* animation for banner */
 @keyframes banner-load {
   from {
     opacity: 0;
@@ -280,6 +282,19 @@ main > section {
 
   to {
     opacity: 1;
+  }
+}
+
+/* animation of left to right */
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-1500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
