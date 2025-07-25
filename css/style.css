@@ -6,7 +6,6 @@
   margin: 0;
 }
 
-
 :root {
   --primary-color: #e02c6d;
   --text-primary: #3a3a3a;
@@ -97,7 +96,7 @@ main > section {
 }
 
 .banner-img {
-  background-image: url("./images/circle.png");
+  background: url("../images/circle.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 475px;
